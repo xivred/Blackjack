@@ -12,6 +12,9 @@
     "IsHide": "False",
     "IsTestingExclusive": "False",
     "DownloadCount": 0,
-    "IconUrl": "https://github.com/xivred/Blackjack/raw/main/icon.png"
+    "IconUrl": "https://github.com/xivred/Blackjack/raw/main/icon.png",
+    "DownloadLinkInstall": "https://github.com/xivred/Blackjack/releases/download/1.0.0/Blackjack.zip",
+    "DownloadLinkTesting": "https://github.com/xivred/Blackjack/releases/download/1.0.0/Blackjack.zip",
+    "DownloadLinkUpdate": "https://github.com/xivred/Blackjack/releases/download/1.0.0/Blackjack.zip"
   }
 ]
