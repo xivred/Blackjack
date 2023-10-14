@@ -4,7 +4,7 @@
     "Name": "Red's Blackjack Plugin",
     "Description": "Become the best Blackjack dealer in Eorzea.",
     "Punchline": "A valid License Key is required to use this Plugin, please use /rbjc for more information.",
-    "InternalName": "BJPluginRed",
+    "InternalName": "Blackjack",
     "RepoUrl": "https://github.com/xivred/Blackjack/",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 9,
