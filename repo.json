@@ -15,9 +15,9 @@
     "IconUrl": "https://github.com/xivred/Blackjack/raw/main/icon.png",
     "_isDip17Plugin": false,
     "_Dip17Channel": null,
-    "AssemblyVersion": "1.0.0.1",
-    "DownloadLinkInstall": "https://github.com/xivred/Blackjack/releases/download/1.0.0.1/Blackjack.zip",
-    "DownloadLinkTesting": "https://github.com/xivred/Blackjack/releases/download/1.0.0.1/Blackjack.zip",
-    "DownloadLinkUpdate": "https://github.com/xivred/Blackjack/releases/download/1.0.0.1/Blackjack.zip"
+    "AssemblyVersion": "1.0.0.2",
+    "DownloadLinkInstall": "https://github.com/xivred/Blackjack/releases/download/1.0.0.2/Blackjack.zip",
+    "DownloadLinkTesting": "https://github.com/xivred/Blackjack/releases/download/1.0.0.2/Blackjack.zip",
+    "DownloadLinkUpdate": "https://github.com/xivred/Blackjack/releases/download/1.0.0.2/Blackjack.zip"
   }
 ]
