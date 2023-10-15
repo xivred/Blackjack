@@ -202,7 +202,9 @@ Draws 1 card for the targetted player, mentioning it's for Hand 2 of the split.
 Used to end the game when the Dealer hits Hard 17 or higher.
 
 > [!Warning]
-> This will end the current game, make sure everyone on the table is on standing position before you trigger it, else the game will think they can still do their move. 
+> This will end the current game, make sure everyone on the table is on standing position before you trigger it, else the game will think they can still do their move.
+>
+> The Plugin will copy to your clipboard different messages depending on the Dealer's cards, if it's on Hard 17 or higher, the plugin will automatically include this trigger on the copied message. You can use this macro when for example, you're on Soft 19 and you chose to stand.
 
 > [!NOTE] 
 > You can modify this macro as long as you have the keyword `dealer stands`.
