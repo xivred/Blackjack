@@ -6,7 +6,7 @@ Add the following repo to your Dalamud Settings: `https://raw.githubusercontent.
 
 ## **Before you start:**
 
-This plugin requires a valid License Key, which can be obtained by following the instructions on http://www.patreon.com/redxiv, without a valid key, you won't be able to use it.
+This plugin requires a valid License Key, which can be obtained by following the instructions on [**Patreon**](https://www.patreon.com/posts/welcome-91002075), without a valid key, you won't be able to use it.
 
 1. Install `Macro Chain` plugin, which is available on Dalamud by Default. This will allow you to trigger macros through chat, the plugin will copy some of the macros to your clipboard so you just need to paste it on chat.
 2. Add all the macros of the plugin to **SHARED MACROS**, paying special attention to the number some of those macros require (you can change the macro number later in the plugin configuration if you like).
