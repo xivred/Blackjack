@@ -27,6 +27,22 @@ This plugin requires a valid License Key, which can be obtained by following the
 
 --------------------
 
+## **Plugin Rules**
+
+- Players can have Natural Blackjack only on their first hand (2 cards), Natural Blackjack is not applied to Split Hands.
+- The dealer will be forced to hit on 16 or less, and stand on Hard 17 or higher, if the dealer is on a Soft 17+ (17/7), the dealer is free to hit on 7 but not on 17.
+- The Dealer can decide if they want to allow Double Down on Split Hands, it's possible but not recommended.
+- Natural Blackjack (1 + 10) vs Dealer Natural Blackjack (1 + 10) will push the Player's Bet.
+- 1 or "ACE" has a value of 1 or 11, 10-13 have a value of 10.
+- Same numbers can be split into 2 hands (during first hand), same bet is required for 2nd hand. This applies only if you get for example 12+12 not on 12+13 cards.
+
+  > [!Warning]
+  > When you Split a hand, the plugin takes the first card and copies it to the 2nd hand. Make sure the hand is for example 6+6 or 12+12 when the cards are drawn.
+  >
+  > The Plugin will let you know whenever a hand can be split by copying a message to your clipboard when it's available.
+
+--------------------
+
 ## **Commands:**
 - Type `/rbjc` to open the plugin configuration window.
 - Type `/rbj` to open the game window.
@@ -66,26 +82,32 @@ Once the game ends, a "Play again?" button will appear, if you click this the ta
 ## **Third:**
 If you're doing a double down or split, collect the bet first, then run the corresponding macro.
 
-### **If it's a split:**
-1. Collect the bet before, or run a pre-split macro (without mentioning the string that splits it, check below for more info).
+### **If it's a Split:**
+1. Collect the bet before, or run a pre-split macro (without mentioning the string that splits it, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-split-announcement) for more info.
 2. Run the split macro to split the hand into 2 separate ones.
-3. Hit the player TWICE (there's macros for Hand 1 and Hand 2, but regular hit works)
+3. Hit the player **TWICE** (there's macros for Hand 1 and Hand 2, but regular hit works).
 4. Once done, paste the result.
 5. You will automatically be hitting hand 1 after this, and will pass onto hand 2 if you stand the player or if the player bust on hand 1.
-6. Make sure to paste the result the plugin gives you, but READ it first, as it's not 100% bug free.
+6. Make sure to paste the result the plugin gives you, but READ it first, as it's not 100% bullet proof. Report any bugs on [Discord](https://discord.gg/Y6H739KKKp).
 
-### **If it's a double down:**
-1. Collect the bet before, or run a pre-DD macro (without mentioning the string that duplicates the bet, check below for more info).
+### **If it's a Double Down:**
+1. Collect the bet before, or run a pre-DD macro (without mentioning the string that duplicates the bet, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-double-down-announcement) for more info.
 2. Run the DD macro to duplicate the bet.
 3. Hit the player once.
 4. The player will be stood automatically after you draw their card.
 5. Paste the result.
 
 ## **Fourth:**
-Every time you end someone's turn, STAND THEM. It is needed for the plugin to know they're not still playing the game, if you don't see RED (bust) or YELLOW [STAND] (it actually says STAND on the plugin), then you need to go back and stand them.
+Every time you end someone's turn, **STAND THEM**. It is needed for the plugin to know they're not still playing the game, if you don't see RED (bust) or YELLOW [STAND] (it actually says STAND on the plugin), then you need to go back and stand them.
+
+> [!Warning]
+> You are required to stand every player unless they bust or obtain a Natural Blackjack. If you don't stand the players, the Plugin will think they're still able to play once the Dealer stands and will not consider them as winners.
 
 ## **Fifth:**
 Once you have given everyone their cards, run your "dealer hits" macro, until you hit HARD 17+. If you're on a soft 17+ (17/7) the plugin will allow you to continue hitting on the HARD number. It's up to you to stand or not when you're on or over Soft 17. If you keep on hitting and you have a Soft 18 for example, and get a "1" (Ace), your result is 9, not 19, you must NOT use the Soft result to win the game if you have chosen to hit on soft 17+ numbers.
+
+> [!Note]
+> If the dealer chooses to hit on Soft 17 or higher, the dealer must continue hitting until they reach Hard 17 or higher. Else you're going to have some angry players in your table.
 
 The game ends once you BUST or STAND.
 
