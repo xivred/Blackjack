@@ -117,7 +117,7 @@ Draws 1 card for the targetted player.
 Used to modify the player's bet to x2 the value and enter Double Down processes.
 
 > [!Warning]
-> Use this macro **after** collecting the Double Down bet.
+> Use this macro **after** collecting the Double Down bet (equal to the initial bet).
 
 > [!NOTE] 
 > You can modify this macro as long as you have the keyword `chooses double down`, this will increase the targetted player's bet to x2 the value, after the next card draw the player will be forced to stand.
@@ -143,11 +143,94 @@ Provides the player with their Double Down card, you can use [Player Hit](#playe
 
 
 # **Player Stands**  
-Used to modify the player's bet to x2 the value.
+Used to set a player on the stand status.
 
 > [!NOTE] 
-> You can change `/dice party 13` to `/dice cwl7 13` when you are practicing. You need to have a Cross World Linkshell on #7 for this to work.
+> You can modify this macro as long as you have the keyword `stands`, so the Plugin identifies that the targetted player is standing.
 ```
                          ≫≫    ≪≪
  <t> stands.
 ```
+
+
+# **Player Split Announcement**  
+Used to split the targetted player hand into 2 separate hands.
+
+> [!Warning]
+> Use this macro **after** collecting the Splitting bet (equal to the initial bet). 
+
+> [!NOTE] 
+> You can modify this macro as long as you have the keyword `chooses to split`.
+>  
+> Optional: You can also add a macro previous to this, so the player knows they have to pay the bet first, and then make your own macro with the `chooses to split` keyword to trigger it.
+```
+                         ≫≫    ≪≪
+ Here we go!  <t> chooses to split the hand.
+Your bet will be collected and each card will be treated as a separate hand. I will hit both hands once, then continue with each one individually. <se.8>
+```
+
+
+# **Player Split Hit Hand 1**  
+Draws 1 card for the targetted player, mentioning it's for Hand 1 of the split.
+
+> [!NOTE]
+> You can change `/dice party 13` to `/dice cwl7 13` when you are practicing. You need to have a Cross World Linkshell on #7 for this to work.
+>
+> Optional: You can use regular [Player Hit](#player-hit) instead to save on some macro space.
+```
+                 ≫≫        ≪≪
+ Hitting  <t> with... <se.8><wait.2>
+/dice party 13
+```
+
+# **Player Split Hit Hand 2**  
+Draws 1 card for the targetted player, mentioning it's for Hand 2 of the split.
+
+> [!NOTE]
+> You can change `/dice party 13` to `/dice cwl7 13` when you are practicing. You need to have a Cross World Linkshell on #7 for this to work.
+>
+> Optional: You can use regular [Player Hit](#player-hit) instead to save on some macro space.
+```
+                 ≫≫        ≪≪
+ Hitting  <t> with... <se.8><wait.2>
+/dice party 13
+```
+
+
+
+# **Dealer Stands**  
+Used to end the game when the Dealer hits Hard 17 or higher.
+
+> [!Warning]
+> This will end the current game, make sure everyone on the table is on standing position before you trigger it, else the game will think they can still do their move. 
+
+> [!NOTE] 
+> You can modify this macro as long as you have the keyword `dealer stands`.
+
+```
+                         ≫≫    ≪≪
+ Dealer stands.
+```
+
+
+
+# **Rules**  
+A macro that shows the rules of the game.
+
+> [!NOTE] 
+> This macro is optional, you can modify it to your liking.
+
+```
+_______________________________________________
+                             ≫≫   ≪≪
+.
+ The dealer will be forced to hit on 16 or less, and stand on Hard 17 or higher, if the dealer is on a Soft 17+ (17/7), the dealer is free to hit on 7 but not on 17.
+ Same numbers can be split into 2 hands (during first hand), same bet is required for 2nd hand. This applies only if you get for example 12+12 not on 12+13 cards.
+ You can Double Down once your hand has been drawn (first hand).
+ Natural Blackjack (1 + 10) wins x2.5 only on first hand, does not apply on Splits.
+ Natural Blackjack (1 + 10) vs Dealer Natural Blackjack (1 + 10) will push the Player's Bet.
+ 1 or "ACE" has a value of 1 or 11, 10-13 have a value of 10.
+ Pushing will move your bet to the next round unless you want to leave the table.
+ When you Double Down and your hand is pushed, your Double Down is lost, only the initial bet will be pushed.
+```
+
