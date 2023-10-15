@@ -122,9 +122,9 @@ Once you have given everyone their cards, run your "dealer hits" macro, until yo
 The game ends once you BUST or STAND.
 
 ## **When the game ends:**
-Once the game is over you can paste your result into chat. AFTER YOU DO THAT, PASTE AGAIN to paste the win/lose/push result, the plugin does not let you know this has been copied after you send your result information, just paste again and it will be there.
+Once the game is over you can paste your result into chat. AFTER YOU DO THAT, PASTE AGAIN to paste the win/lose/push result, the plugin will let you know this has been copied after you send your result information.
 
 The plugin will enable a "PLAY AGAIN?" button, this will reset the table bets and cards WITHOUT DELETING PLAYERS (only extra hands from splits and resets DD's amounts).
 
 ## **Before you start the next round:**
-Make sure to pay attention to who has pushed, and collect bets from people.
+Make sure to pay attention to who has pushed (it should be available on your chat logs), and collect bets from people that need to pay up.
