@@ -74,7 +74,7 @@ Allows the players know the bet collection process has ended and the game is abo
 
 
 # **Dealer Hit**  
-Draws 1 card for the dealer player.
+Draws 1 card for the dealer.
 
 > [!NOTE]
 > You can change `/dice party 13` to `/dice cwl7 13` when you are practicing. You need to have a Cross World Linkshell on #7 for this to work.  
