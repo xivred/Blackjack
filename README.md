@@ -60,6 +60,11 @@ This plugin requires a valid License Key, which can be obtained by following the
 2. Target the player.
 3. Type `/e delete player`
 
+  > [!Note]
+  > If the player is no longer available to target, you can simply ignore that player on the following games, they will not appear on the results of the following games.
+  >
+  > As an alternative, you can **Delete the Table**, which will reset the whole game. Note that this will DELETE all players, use it only as last resort.
+
 --------------------
 
 # How to use the plugin:
@@ -68,6 +73,11 @@ It works through keywords and targeting players, **you must play one player at a
 The game will not end until **the dealer Stands**. The table will automatically add up all the cards you draw, and will copy strings into your clipboard so you can just paste whatever the plugin copies.
 
 Once the game ends, a "Play again?" button will appear, if you click this the table will restart and the bets will be returned to the initial bets (if there was a DD it will go back to the regular bet, if there's a split it will remove any additional hands).
+
+> [!Warning]
+> Never type a sentence with the keyword `new game` as this will cause the table to be deleted.
+>
+> Always wait until the end of the game to either click the `Play Again?` button to reset the table (without deleting players), or `Delete Table` to completely restart the game window, deleting the players and all previous information.
 
 --------------------
 
