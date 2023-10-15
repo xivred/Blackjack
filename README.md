@@ -93,7 +93,7 @@ Once the game ends, a "Play again?" button will appear, if you click this the ta
 If you're doing a double down or split, collect the bet first, then run the corresponding macro.
 
 ### **If it's a Split:**
-1. Collect the bet before, or run a pre-split macro (without mentioning the string that splits it, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-split-announcement) for more info.
+1. Collect the bet before, or run a pre-split macro without mentioning the string that splits it, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-split-announcement) for more info.
 2. Run the split macro to split the hand into 2 separate ones.
 3. Hit the player **TWICE** (there's macros for Hand 1 and Hand 2, but regular hit works).
 4. Once done, paste the result.
@@ -101,7 +101,7 @@ If you're doing a double down or split, collect the bet first, then run the corr
 6. Make sure to paste the result the plugin gives you, but READ it first, as it's not 100% bullet proof. Report any bugs on [Discord](https://discord.gg/Y6H739KKKp).
 
 ### **If it's a Double Down:**
-1. Collect the bet before, or run a pre-DD macro (without mentioning the string that duplicates the bet, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-double-down-announcement) for more info.
+1. Collect the bet before, or run a pre-DD macro without mentioning the string that duplicates the bet, check [here](https://github.com/xivred/Blackjack/blob/main/macros.md#player-double-down-announcement) for more info.
 2. Run the DD macro to duplicate the bet.
 3. Hit the player once.
 4. The player will be stood automatically after you draw their card.
