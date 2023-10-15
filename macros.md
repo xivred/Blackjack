@@ -218,7 +218,9 @@ Used to end the game when the Dealer hits Hard 17 or higher.
 A macro that shows the rules of the game.
 
 > [!NOTE] 
-> This macro is optional, you can modify it to your liking.
+> This macro is optional, you can modify it to your liking, some of these rules follow the Plugin's configuration.
+>
+> You can modify the x2.5 Natural Blackjack multiplier in the Plugin Settings using `/rbjc`
 
 ```
 _______________________________________________
